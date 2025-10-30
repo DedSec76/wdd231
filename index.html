@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <title>Home Page - Hello Everybody</title>
 </head>
 <body>
-    <h1>Hello World!!</h1>
+    <header>
+        <img src="images/logo-dedsec.webp" alt="Logo-img">
+    <span>Course WDD 231</span>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home and Projects</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>      
+    </nav>
+    
+    <main>
+        <h1>Home</h1>
+        <section class="box-section">
+            <header><h2>About Me</h2></header>
+            <div class="background">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum debitis similique, corrupti corporis est rem voluptatem et ipsum error facere optio? Eligendi sapiente laudantium, perspiciatis explicabo odit commodi dolores porro!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, error recusandae. Esse expedita excepturi modi illo quae harum eius exercitationem, maxime consequatur illum rerum tempora explicabo natus, reprehenderit numquam porro!
+                </p>
+            </div>
+        </section>
+        <section class="box-section">
+            <header><h2>Student Photo</h2></header>
+            <div class="background">
+                <img src="images/perfil-student.webp" alt="Student-photo">
+            </div>
+        </section>
+        <section class="box-section">
+            <header><h2>Web Certificate Courses</h2></header>
+            <div class="box-selection">
+                <div>
+                    <button id="all">All Courses</button>
+                </div>
+                <div>
+                    <button id="wdd">WDD Courses</button>
+                </div>
+                <div>
+                    <button id="cse">CSE Courses</button>
+                </div>
+            </div>
+            <div class="box-courses">
+            </div>
+
+            <p class="text-center">The total credits for couse listed above is 6</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="box-social">
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="logo-linkedin" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/github.svg" alt="logo-github" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/youtube.svg" alt="logo-youtube" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> º Aldair Rutte º Lima, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

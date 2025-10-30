@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/***************** HEADER ******************/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: 1px solid #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.3rem;
+    color: #3D405B;
+}
+
+/************** HAMBURGER NAVIGATION ******************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/************** NAVIGATION ******************/
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #3D405B;
+    border-bottom: 1px solid #ddd;
+    
+}
+.navigation li.current {
+    background-color: #eee;
+}
+.navigation a:hover {
+    background-color: #E07A5F;
+}
+
+/************** MAIN ******************/
+main {
+    display: grid;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+.box-section {
+    padding: 10px;
+}
+.box-section header {
+    display: block;
+    background-color: #3D405B;
+}
+
+.box-section h2 {
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+.box-section p {
+    font-size: 1.1rem;
+}
+.box-section img {
+    width: 15rem;
+    height: 20rem;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+}
+.background {
+    padding: 10px;
+    background-color: #eee;
+}
+.box-selection {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.box-selection button {
+    padding: 5px 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgb(81, 81, 81);
+}
+.box-courses {
+    padding: 5px 10px;
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 5px;
+}
+.course {
+    border-radius: 10px;
+    background-color: #E07A5F;
+    padding: 10px 0;
+    text-align: center;
+}
+.completed {
+    background-color: rgb(238, 238, 213);
+}
+
+
+/************** FOOTER ******************/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+.box-social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.box-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+}
+.box-social img {
+    width: 22px;
+    height: 22px;
+}
+.box-social a:hover {
+    background-color: #ddd;
+}
