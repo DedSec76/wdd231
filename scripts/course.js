@@ -78,6 +78,9 @@ const courses = [
     }
 ]
 
+const total = courses.reduce((acum, course) => acum + course.credits, 0)
+credits.textContent = total
+
 const box_courses = document.querySelector('.box-courses')
 
 createCourseCard(courses)
@@ -100,19 +103,42 @@ function createCourseCard(filteredCourses) {
 const all = document.querySelector('#all')
 all.addEventListener("click", () => {
     createCourseCard(courses)
+    const total = courses.reduce((acum, course) => acum + course.credits, 0)
+    credits.textContent = total
 })
 
 const wdd = document.querySelector('#wdd')
 
 wdd.addEventListener("click", () => {
-    createCourseCard(courses.filter(course => course.subject.startsWith("W")))
+
+    const filteredCourses = courses.filter(course => course.subject.startsWith("W"))
+    createCourseCard(filteredCourses)
+
+    const totalCredits = filteredCourses.reduce((acum, course) => acum + course.credits, 0)
+    
+    document.querySelector("#credits").textContent = totalCredits
 })
+
+
 
 const cse = document.querySelector('#cse')
 
 cse.addEventListener("click", () => {
-    createCourseCard(courses.filter(course => course.subject.startsWith("C")))
+   const filteredCourses = courses.filter(course => course.subject.startsWith("C"))
+   createCourseCard(filteredCourses)
+
+   const totalCredits = filteredCourses.reduce((acum, course) => acum + course.credits, 0)
+
+   document.querySelector("#credits").textContent = totalCredits
 })
+
+
+
+
+
+
+
+
 
 
 
