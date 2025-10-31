@@ -93,7 +93,7 @@ h1 {
 .box-section {
     padding: 10px;
 }
-.box-section header {
+.box-section div {
     display: block;
     background-color: #3D405B;
 }
