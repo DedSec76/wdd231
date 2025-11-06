@@ -1,0 +1,32 @@
+@media only screen and (min-width: 720px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav {
+        flex-direction: row;
+        
+    }
+    header nav a {
+        display: block;
+        align-items: center;
+        margin: 0;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    .container-home {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container-business {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .end-page {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

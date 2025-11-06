@@ -1,0 +1,166 @@
+:root {
+    --primaryColor: #1E5E9E;
+    --secondaryColor: #E0A500;
+    --backgroundColor: #F8F9FB;
+    --textColor: #333333;
+    --accent-color: #009688;
+    --fontFamily: "Poppins", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: var(--fontFamily);
+    color: var(--textColor);
+}
+
+/********************** HEADER *************************/
+
+header {
+    /*display: flex;
+    flex-direction: row;
+    gap: 10px; */
+    background-color: var(--primaryColor);
+    padding: 1rem 1.2rem;
+}
+
+header img {
+    
+}
+
+header span {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+/************** HAMBURGER NAVIGATION ******************/
+#btn-menu {
+    background: none;
+    border: none;
+    color: var(--backgroundColor);
+    cursor: pointer;
+    font-family: Arial;
+}
+#btn-menu::after {
+    content: "\2630";
+    font-size: 2rem;
+    text-align: end;
+}
+#btn-menu.show::after {
+    content: "❌";
+    font-size: 1.5rem;
+    text-align: end;
+}
+/****************** NAVIGATION *********************/
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+header nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: var(--backgroundColor);
+}
+header nav a:hover {
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+}
+.show a {
+    display: block;
+}
+/****************** MAIN *********************/
+
+/****************** FIRST SECTION *********************/
+.container-home {
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.card-home {
+    border: 1px solid gray;
+    height: 200px;
+}
+.card-home h2 {
+    background-color: var(--primaryColor);
+    color: var(--backgroundColor);
+    padding-left: 5px;
+}
+
+/****************** SECOND SECTION *********************/
+.container-business {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem 10px;
+}
+.card-business {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 150px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card-business img {
+    margin: 10px;
+    width: 100px;
+    height: 80px;
+    float: left;
+    background-color: red;
+}
+.card-business p {
+    
+}
+
+.business-info {
+    
+    
+}
+.business-info p {
+    margin: 10px;
+    font-weight: bold;
+    text-align: start;
+}
+.business-info span {
+    font-weight: normal;
+}
+
+/****************** FOOTER *********************/
+.end-page {
+    background-color: var(--primaryColor);
+    color: var(--backgroundColor);
+    padding: 1rem 10px;
+    line-height: 1.6;
+}
+.contact h4 {
+    margin: 10px 0;
+}
+.contact p {
+    
+}
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+.social a {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 100%;
+}
+.social a:hover {
+    background-color: #000000;
+}
+.social a img {
+    width: 2rem;
+}
