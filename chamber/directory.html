@@ -7,20 +7,22 @@
     <meta name="description" content="This page is dedicated to the chamber of commerce where you can trade unique items of good quality at a good price">
     <title>The Chamber of Commerce Directory</title>
 
-    <!-- Links CSS -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-larger.css">
+    <!-- CSS critical (only the minimum to avoid cluttered content flashing) -->
+    <style>
+        body { margin: 0; font-family: "Poppins", sans-serif; }
+        header, main, footer { visibility: hidden; } /* It is displayed when the CSS loads. */
+    </style>
 
-    <!-- Links JS -->
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/business.js" defer></script>
-    <script src="scripts/layout-view.js" defer></script>
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/directory.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/directory-larger.css" media="print" onload="this.media='all'">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
 
     <!-- FavIcon -->
     <link rel="icon" href="images/comerce_icon.svg">
@@ -29,8 +31,12 @@
     <meta property="og:title" content="The Premium Chamber of Commerce">
     <meta property="og:description" content="Discover the innovative chamber of commerce where you'll find unique items at incredible prices. Explore our new and improved website to find out everything.">
     <meta property="og:url" content="https://byupw.instructure.com/">
-    <meta property="og:image" content="https://github.com/DedSec76/wdd231/blob/master/chamber/images/meta-image.webp" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/DedSec76/wdd231/master/chamber/images/meta-image.webp" />
 
+    <!-- Links JS -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/business.js" defer></script>
+    <script src="scripts/layout-view.js" defer></script>
 </head>
 <body>
     <header>
@@ -158,5 +164,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelectorAll("header, main, footer").forEach(el => {
+            el.style.visibility = "visible";
+            });
+        });
+    </script>
 </body>
 </html>
