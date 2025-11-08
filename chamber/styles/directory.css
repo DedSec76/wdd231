@@ -6,9 +6,9 @@
     --backgroundColor: #F8F9FB;
     --backgroundCards: #eee;
     --whiteColor: #fff;
-    --grayColor: gray; 
+    --grayColor: #ccc; 
     --textColor: #242424;
-    --accent-color: #009688;
+    --wineColor: #600606;
     --fontFamily: "Poppins", sans-serif;
 }
 
@@ -146,7 +146,7 @@ h1 {
     border-radius: 6px;
     border: 1px solid var(--grayColor);
     overflow: hidden;
-    color: #333;
+    color: var(--textColor);
 }
 .card-header {
     background-color: var(--primaryColor);
@@ -217,14 +217,14 @@ ul.forecast li span {
     padding-left: .5rem;
 }
 .list .header-business p {
-    color: #600606;
+    color: var(--wineColor);
 }
 
 .list img {
     display: none;
 }
 .list .card-business:nth-child(even) {
-    background-color: #cacaca;
+    background-color: var(--backgroundColor);
 }
 
 /* Grid View */
@@ -236,14 +236,14 @@ ul.forecast li span {
 }
 .card-business {
     background-color: var(--backgroundCards);
-    border: 1px solid #ccc;
+    border: 1px solid var(--grayColor);
     border-radius: 8px;
     overflow: hidden;
 }
 .header-business {
     margin: 10px 0px 5px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--grayColor);
 }
 .content-business {
     display: flex;
