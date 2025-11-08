@@ -14,6 +14,8 @@
 
     <!-- Links JS -->
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/business.js" defer></script>
+    <script src="scripts/layout-view.js" defer></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +35,8 @@
 <body>
     <header>
         <div class="logo-box">
-            <img src="" alt="Logo-header">
-            <span>Timbuktu Chamber of Commerce</span>
+            <img src="images/chamber-commerce-logo.webp" alt="Logo-header">
+            <span>Lima Chamber of Commerce</span>
             <button id="btn-menu"></button>
         </div>
         <nav>
@@ -46,83 +48,114 @@
     </header>
     
     <main>
-        <img src="" alt="Hero-image">
-    </main>
-    <section>
-        <h1>Home</h1>
-
-        <div class="container-home">
-            <div class="card-home">
-                <h2>Events</h2>
+        <!-- Hero Section -->
+        <section class="section-hero">
+            
+            <div class="hero-content">
+                <h2>We support local businesses</h2>
+                <p>We support entrepreneurs, companies and businesses to grow together in our region.</p>
+                <a href="#">Get to know us</a>
             </div>
-            <div class="card-home">
-                <h2>Current Weather</h2>
+        </section>
+
+        <!-- First Section -->
+        <section>
+            <h1>Home</h1>
+
+            <div class="container-home">
+                <div class="card-home">
+                    <div class="card-header">
+                        <h2>Events</h2>
+                    </div>
+                    <div class="card-content">
+
+                    </div>
+                </div>
+                <div class="card-home">
+                    <div class="card-header">
+                        <h2>Current Weather</h2>
+                    </div>
+                    <div class="card-content">
+                        <figure class="weather-icon" role="img" aria-label="Partly cloudy">🌤</figure>
+                        <div class="weather-info">
+                            <h3 class="temp">75º F</h3>
+                            <ul class="details">
+                                <li>Partly Cloudy</li>
+                                <li>High: 85°</li>
+                                <li>Low: 52°</li>
+                                <li>Humidity: 34%</li>
+                                <li>Sunrise: 7:30am</li>
+                                <li>Sunset: 9:59pm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-home">
+                    <div class="card-header">
+                        <h2>Weather Forecast</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="weather-info">
+                            <ul class="details forecast">
+                                <li>Today: <span>90ºF</span></li>
+                                <li>Wednesday: <span>89ºF</span></li>
+                                <li>Thursday: <span>68ºF</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card-home">
-                <h2>Wather Forecast</h2>
-            </div>
-        </div>
-    </section>
-    <section class="container-business">
-        <div class="card-business">
-            <h3>Business Name</h3>
-            <p>Business Tag Line</p>
-            <hr>
-
-            <img src="" alt="img-business">
-
-            <div class="business-info">
-                <p>Email: <span>info@gmail.com</span></p>
-                <p>Phone: <span>800-555-1234</span></p>
-                <p>URL: <span>mybusiness.com</span></p>
-            </div>
-        </div>
-        <div class="card-business">
-            <h3>Business Name</h3>
-            <p>Business Tag Line</p>
-            <hr>
-
-            <img src="" alt="img-business">
-
-            <div class="business-info">
-                <p>Email: <span>info@gmail.com</span></p>
-                <p>Phone: <span>800-555-1234</span></p>
-                <p>URL: <span>mybusiness.com</span></p>
-            </div>
-        </div>
-        <div class="card-business">
-            <h3>Business Name</h3>
-            <p>Business Tag Line</p>
-            <hr>
-
-            <img src="" alt="img-business">
-
-            <div class="business-info">
-                <p>Email: <span>info@gmail.com</span></p>
-                <p>Phone: <span>800-555-1234</span></p>
-                <p>URL: <span>mybusiness.com</span></p>
-            </div>
-        </div>
-    </section>
-    <footer class="end-page">
-        <div class="contact">
-            <h4>Timbuktu Chamber of Commerce</h4>
-            <p>10 Rue De La Paix</p>
-            <p>Timbuktu, Mali 999</p>
-            <p>info@timbuktucc.org</p>
-            <p>(223) 555-23000</p>
-        </div>
-        <div class="social">
-            <a href="#"><img src="images/youtube.svg" alt="Youtube"></a>
-            <a href="#"><img src="images/linkedin.svg" alt="Linkedin"></a>
-            <a href="#"><img src="images/github.svg" alt="GitHub"></a>
-        </div>
+        </section>
         
-        <div>
-            <p>WDD231 Class Project</p>
-            <p>Aldair Rutte Bazán</p>
-            <p>&copy; <span id="year"></span>Timbuktu Chamber of Commerce</p>
-            <p id="lastModified"></p>
+        <!-- Button Section-->
+         <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+         </div>
+
+        <!-- Second Section -->
+        <section class="container-business">
+            <!-- 
+            <div class="card-business">
+                <div class="header-business">
+                    <h3>Business Name</h3>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="content-business">
+                    <img src="images/business-image.jpeg" alt="img-business">
+
+                    <div class="business-info">
+                        <p>Email: <span>info@gmail.com</span></p>
+                        <p>Phone: <span>800-555-1234</span></p>
+                        <p>URL: <span>mybusiness.com</span></p>
+                    </div>
+                </div>
+            </div>
+            -->
+        </section>
+    </main>
+    
+    <footer class="end-page">
+        <div class="container-footer">
+            <div class="contact">
+                <h4>Timbuktu Chamber of Commerce</h4>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-23000</p>
+            </div>
+            <div class="social">
+                <a href="#"><img src="images/youtube.svg" alt="Youtube"></a>
+                <a href="#"><img src="images/linkedin.svg" alt="Linkedin"></a>
+                <a href="#"><img src="images/github.svg" alt="GitHub"></a>
+            </div>
+            
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Aldair Rutte Bazán</p>
+                <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
         </div>
     </footer>
 </body>

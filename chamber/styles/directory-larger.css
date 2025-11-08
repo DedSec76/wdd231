@@ -1,4 +1,4 @@
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 321px) {
     header {
         display: flex;
         flex-direction: row;
@@ -19,14 +19,41 @@
         display: none;
     }
 
+    /**************** MAIN SECTION *************/
+    main {
+        max-width: 1300px;
+        margin: auto;
+    }
     .container-home {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 2fr 1fr 1fr;
     }
     .container-business {
         grid-template-columns: repeat(3, 1fr);
     }
-    .end-page {
+
+    /**************** SECOND SECTION *************/
+    /* List View */
+    .list .card-business {
+        grid-template-columns: 2fr 1fr;
+    }
+    .list .header-business {
+        flex-direction: row;
+    }
+
+    /**************** FOOTER SECTION *************/
+    .container-footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        max-width: 1300px;
+        margin: auto;
+        padding-left: 5px;
+    }
+    .social a {
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        background-color: black;
     }
 }
