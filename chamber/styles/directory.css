@@ -93,10 +93,20 @@ main section {
 /****************** HERO *********************/
 .section-hero {
     position: relative;
+    width: 100%;
     height: 40vh;
-    background: url(../images/commerce-hero.webp)
-                center/cover no-repeat;
+    overflow: hidden;
     color: var(--whiteColor);
+}
+.section-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
     
 }
 .section-hero::after {
