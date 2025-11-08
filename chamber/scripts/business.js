@@ -33,6 +33,7 @@ const displayMembers = (members) => {
         img.setAttribute('loading', 'lazy')
         img.setAttribute('width', '100')
         img.setAttribute('height', '100')
+        img.setAttribute('fetchpriority', 'high')
 
         const info = document.createElement('DIV')
         info.classList.add('business-info')
