@@ -9,7 +9,7 @@
 
     <!-- Links CSS -->
     <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="styles/directory.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/directory.css?v=2.0" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/directory-larger.css" media="print" onload="this.media='all'">
 
     <!-- Google Fonts -->
@@ -29,13 +29,13 @@
 
     <!-- Links JS -->
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/business.js" defer></script>
+    <script src="scripts/business.js?v=2.0" defer></script>
     <script src="scripts/layout-view.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo-box">
-            <img src="images/chamber-commerce-logo.webp" alt="Logo-header" fetchpriority="high">
+            <img loading="lazy" src="images/chamber-commerce-logo.webp" alt="Logo-header" fetchpriority="high" width="50px" height="43px">
             <span>Lima Chamber of Commerce</span>
             <button id="btn-menu"></button>
         </div>
@@ -50,7 +50,7 @@
     <main>
         <!-- Hero Section -->
         <section class="section-hero">
-            <img src="images/commerce-hero.webp" alt="main-image-lima-chamber-commerce" fetchpriority="high">
+            <img loading="lazy" src="images/commerce-hero.webp" alt="main-image-lima-chamber-commerce" fetchpriority="high" width="1200" height="800">
             <div class="hero-content">
                 <h2>We support local businesses</h2>
                 <p>We support entrepreneurs, companies and businesses to grow together in our region.</p>
