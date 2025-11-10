@@ -5,7 +5,7 @@
       "address": "Av. Los Ingenieros 245, Lima, Perú",
       "phone_number": "+51 1 765 4321",
       "url": "https://www.technova.pe",
-      "icon": "https://cdn-icons-png.flaticon.com/512/2920/2920222.png",
+      "icon": "images/technova.webp",
       "membership": 3,
       "description": "Company dedicated to custom software development and technology consulting.",
       "email": "contacto@technova.pe"
@@ -15,7 +15,7 @@
       "address": "Jr. Las Palmeras 321, Miraflores, Lima",
       "phone_number": "+51 1 456 9874",
       "url": "https://www.ecomarket.pe",
-      "icon": "https://cdn-icons-png.flaticon.com/512/3500/3500259.png",
+      "icon": "images/ecoMarket.webp",
       "membership": 2,
       "description": "A sustainable marketplace that promotes organic and local products.",
       "email": "ventas@ecomarket.pe"
@@ -25,7 +25,7 @@
       "address": "Calle Cusco 128, Cusco, Perú",
       "phone_number": "+51 84 223 678",
       "url": "https://www.inkatravel.com",
-      "icon": "https://cdn-icons-png.flaticon.com/512/854/854878.png",
+      "icon": "images/inkaTravel.webp",
       "membership": 3,
       "description": "Agency specializing in personalized tours of Peru and South America.",
       "email": "reservas@inkatravel.com"
@@ -35,7 +35,7 @@
       "address": "Av. San Martín 890, Arequipa, Perú",
       "phone_number": "+51 54 612 478",
       "url": "https://www.andescoffee.pe",
-      "icon": "https://cdn-icons-png.flaticon.com/512/415/415733.png",
+      "icon": "images/andesCoffee.webp",
       "membership": 1,
       "description": "Producers and distributors of 100% Peruvian organic coffee.",
       "email": "info@andescoffee.pe"
@@ -45,7 +45,7 @@
       "address": "Av. del Sol 540, Trujillo, Perú",
       "phone_number": "+51 44 789 654",
       "url": "https://www.solartechandes.com",
-      "icon": "https://cdn-icons-png.flaticon.com/512/1046/1046857.png",
+      "icon": "images/solarTech.webp",
       "membership": 2,
       "description": "Leading company in solar energy solutions for industries and homes.",
       "email": "energia@solartechandes.com"
@@ -55,7 +55,7 @@
       "address": "Av. Grau 901, Piura, Perú",
       "phone_number": "+51 73 456 908",
       "url": "https://www.biosaludnatural.pe",
-      "icon": "https://cdn-icons-png.flaticon.com/512/2965/2965567.png",
+      "icon": "images/bioSalud.webp",
       "membership": 1,
       "description": "Distributor of natural products and organic supplements.",
       "email": "contacto@biosaludnatural.pe"
@@ -65,7 +65,7 @@
       "address": "Calle Los Alamos 232, San Isidro, Lima",
       "phone_number": "+51 1 555 7890",
       "url": "https://www.comerciodigital.pe",
-      "icon": "https://cdn-icons-png.flaticon.com/512/2103/2103845.png",
+      "icon": "images/comercioDigital.webp",
       "membership": 3,
       "description": "Consultant in digital marketing and e-commerce development for Peruvian companies.",
       "email": "soporte@comerciodigital.pe"

@@ -12,8 +12,7 @@
     --fontFamily: "Poppins", sans-serif;
 }
 /* CSS critical (only the minimum to avoid cluttered content flashing)*/
-    body { margin: 0; font-family: "Poppins", sans-serif; }
-    header, main, footer { visibility: hidden; } /* It is displayed when the CSS loads. */
+header, main, footer { visibility: hidden; } /* It is displayed when the CSS loads. */
 
 * {
     padding: 0;
@@ -262,9 +261,10 @@ ul.forecast li span {
     display: flex;
 }
 .content-business img {
+    aspect-ratio: 4 / 1;
+    width: 100%;
+    height: auto;
     margin: 10px;
-    width: 100px;
-    height: 100px;
     float: left;
 }
 .business-info p, 
