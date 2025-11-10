@@ -7,12 +7,6 @@
     <meta name="description" content="This page is dedicated to the chamber of commerce where you can trade unique items of good quality at a good price">
     <title>The Chamber of Commerce Directory</title>
 
-    <!-- CSS critical (only the minimum to avoid cluttered content flashing) -->
-    <style>
-        body { margin: 0; font-family: "Poppins", sans-serif; }
-        header, main, footer { visibility: hidden; } /* It is displayed when the CSS loads. */
-    </style>
-
     <!-- Links CSS -->
     <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/directory.css" media="print" onload="this.media='all'">
@@ -31,7 +25,7 @@
     <meta property="og:title" content="The Premium Chamber of Commerce">
     <meta property="og:description" content="Discover the innovative chamber of commerce where you'll find unique items at incredible prices. Explore our new and improved website to find out everything.">
     <meta property="og:url" content="https://byupw.instructure.com/">
-    <meta property="og:image" content="https://raw.githubusercontent.com/DedSec76/wdd231/master/chamber/images/meta-image.webp" />
+    <meta property="og:image" content="https://dedsec76.github.io/wdd231/chamber/images/meta-image.webp">
 
     <!-- Links JS -->
     <script src="scripts/directory.js" defer></script>
@@ -121,23 +115,6 @@
 
         <!-- Second Section -->
         <section class="container-business">
-            <!-- 
-            <div class="card-business">
-                <div class="header-business">
-                    <h3>Business Name</h3>
-                    <p>Business Tag Line</p>
-                </div>
-                <div class="content-business">
-                    <img src="images/business-image.jpeg" alt="img-business">
-
-                    <div class="business-info">
-                        <p>Email: <span>info@gmail.com</span></p>
-                        <p>Phone: <span>800-555-1234</span></p>
-                        <p>URL: <span>mybusiness.com</span></p>
-                    </div>
-                </div>
-            </div>
-            -->
         </section>
     </main>
     
@@ -164,13 +141,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        window.addEventListener("load", () => {
-            document.querySelectorAll("header, main, footer").forEach(el => {
-            el.style.visibility = "visible";
-            });
-        });
-    </script>
 </body>
 </html>

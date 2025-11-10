@@ -1,4 +1,9 @@
 
+window.addEventListener("load", () => {
+        document.querySelectorAll("header, main, footer").forEach(el => {
+        el.style.visibility = "visible";
+        });
+});
 
 const url = './data/members.json'
 const container_b = document.querySelector('.container-business')

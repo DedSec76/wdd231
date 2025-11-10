@@ -11,6 +11,9 @@
     --wineColor: #600606;
     --fontFamily: "Poppins", sans-serif;
 }
+/* CSS critical (only the minimum to avoid cluttered content flashing)*/
+    body { margin: 0; font-family: "Poppins", sans-serif; }
+    header, main, footer { visibility: hidden; } /* It is displayed when the CSS loads. */
 
 * {
     padding: 0;
