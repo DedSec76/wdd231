@@ -21,8 +21,6 @@ const myLat = '-12.077358300300476'
 const myLon = '-76.68715437527801'
 const urlApi = `https://api.openweathermap.org/data/2.5/forecast?units=metric&lat=${myLat}&lon=${myLon}&appid=${myApi}`
 
-// `http://api.openweathermap.org/data/2.5/weather?&units=metric&lat=${myLat}&lon=${myLon}&id=524901&appid=${myApi}`
-
 async function apiFetch() {
     try {
         const response = await fetch(urlApi)
@@ -50,6 +48,7 @@ function displayResults(data) {
 
     myIcon.setAttribute('src', iconsrc)
     myIcon.setAttribute('alt', data.list[0].weather[0].description)
+
 
     const sunrise = data.city.sunrise
     const sunriseHour = new Date(sunrise * 1000)
