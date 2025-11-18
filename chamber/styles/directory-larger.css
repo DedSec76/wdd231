@@ -27,8 +27,12 @@
     .container-home {
         grid-template-columns: 2fr 1fr 1fr;
     }
-    .container-business {
+    .container {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .hero-content p {
+        max-width: 650px;
+        margin: 0  auto 2.5rem;
     }
 
     /**************** SECOND SECTION *************/
