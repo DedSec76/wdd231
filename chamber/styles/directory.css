@@ -264,11 +264,11 @@ ul.forecast li span {
     border-radius: 8px;
     overflow: hidden;
 }
-.silver {
+.spotlights .card-business.silver {
     background: linear-gradient(0deg,rgb(215, 215, 215) 57%, rgba(235, 235, 235, 1) 100%);;
     box-shadow: 3px 2px 12px rgba(192, 192, 192, 1);
 }
-.gold {
+.spotlights .card-business.gold {
     background: linear-gradient(0deg,rgba(255, 215, 0, 1) 52%, rgba(253, 187, 45, 1) 100%);;
     box-shadow: 3px 2px 12px rgb(120, 120, 120);
 }

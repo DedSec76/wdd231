@@ -1,11 +1,11 @@
 
 const grid = document.querySelector('#grid')
 const list = document.querySelector('#list')
-const section = document.querySelector('.container-business')
+const section = document.querySelector('.directory')
 
 if (grid) {
     grid.addEventListener('click', () => {
-        section.classList.add('container-business')
+        section.classList.add('directory')
         section.classList.remove('list')
     })
 }

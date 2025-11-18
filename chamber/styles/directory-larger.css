@@ -37,7 +37,10 @@
 
     /**************** SECOND SECTION *************/
     /* List View */
-    .list .card-business {
+    .container.directory.list {
+        grid-template-columns: 1fr;
+    }
+    .list .card-business{
         grid-template-columns: 2fr 1fr;
     }
     .list .header-business {
