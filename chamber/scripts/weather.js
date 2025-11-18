@@ -19,7 +19,7 @@ const afterTomo = document.querySelector('#afterTomo')
 const myApi = 'c6cca0395f3973805a693ee6ef3b8667'
 const myLat = '-12.077358300300476'
 const myLon = '-76.68715437527801'
-const urlApi = `http://api.openweathermap.org/data/2.5/forecast?units=metric&lat=${myLat}&lon=${myLon}&appid=${myApi}`
+const urlApi = `https://api.openweathermap.org/data/2.5/forecast?units=metric&lat=${myLat}&lon=${myLon}&appid=${myApi}`
 
 // `http://api.openweathermap.org/data/2.5/weather?&units=metric&lat=${myLat}&lon=${myLon}&id=524901&appid=${myApi}`
 
