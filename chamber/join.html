@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Aldair Rutte">
-    <meta name="description" content="This page is dedicated to helping you apply for a membership and obtain great benefits that will help your company or organization gain more visibility on our website. Don't hesitate any longer; just fill out the form and you'll start enjoying the fantastic benefits we offer. Click 'Learn More' for details.">
+    <meta name="description" content="Complete the form to request your membership and gain benefits and greater visibility on our website. Click 'Learn More' for more details.">
     <title>Join the Lima Chamber of Commerce</title>
 
     <!-- Links CSS -->
@@ -75,12 +75,14 @@
                 <label for="business">Organization's Name (*)
                     <input type="text" required name="bname" id="business" title="businessName" autocomplete="organization">
                 </label>
-
-                <label for="np">Membership Level</label>
+                
+                <fieldset>
+                    <legend> Membership Level</legend>
                     <label for="np" class="member-level"><input  type="radio" name="level" id="np" value="np">  NP Membership is for non profit organizations and there is no fee (np)</label>
                     <label for="bronze" class="member-level"><input type="radio" name="level" id="bronze" value="bronze">  Bronze Membership (bronze)</label>
                     <label for="silver" class="member-level"><input type="radio" name="level" id="silver" value="silver">  Silver Membership (silver)</label>
                     <label for="gold" class="member-level"><input type="radio" name="level" id="gold" value="gold">  Gold Membership (gold)</label>
+                </fieldset>
 
                 <label for="description">Description: 
                     <textarea title="businessDescription" name="description" id="description"></textarea>
