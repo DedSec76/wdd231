@@ -97,6 +97,10 @@ function createCourseCard(filteredCourses) {
             p.textContent = `${course.subject} ${course.number}`
         }
         box_courses.appendChild(p)
+
+        p.addEventListener("click", () => {
+            displayCourseDetails(course)
+        })
     })
 }
 
@@ -131,6 +135,28 @@ cse.addEventListener("click", () => {
 
    document.querySelector("#credits").textContent = totalCredits
 })
+
+
+/****************** MODAL ******************/
+const courseDetails = document.querySelector('#course-details')
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = ''
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>        
+    `
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close()
+    })
+}
 
 
 

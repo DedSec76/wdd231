@@ -28,9 +28,9 @@
     <meta property="og:image" content="https://dedsec76.github.io/wdd231/chamber/images/meta-image.webp">
 
     <!-- Links JS -->
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/business.js?v=2.0" defer></script>
+    
 </head>
 <body>
     <header>
@@ -40,7 +40,7 @@
             <button id="btn-menu"></button>
         </div>
         <nav>
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="#">Discover</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">JOIN</a>
@@ -48,68 +48,11 @@
     </header>
 
     <main>
-        <!-- First Section -->
-        <section class="section-hero">
-            <img loading="lazy" src="images/commerce-hero.webp" alt="main-image-lima-chamber-commerce" fetchpriority="high" width="1200" height="800">
-            <div class="hero-content">
-                <h2>We support local businesses</h2>
-                <p>We support entrepreneurs, businesses, and any entity that offers a service so we can grow together in our region and foster commerce, helping society prosper.</p>
-                <a href="#">Join us now!</a>
-            </div>
-        </section>
+        <h1 class="text-center">Thank You For Join Us</h1>
 
-         <!-- Weather Section -->
-        <section>
-            <h1>Home</h1>
+        <div class="thanks-container">
 
-            <div class="container-home">
-                <div class="card-home">
-                    <div class="card-header">
-                        <h2>Events</h2>
-                    </div>
-                    <div class="card-content">
-                    </div>
-                </div>
-                <div class="card-home">
-                    <div class="card-header">
-                        <h2>Current Weather</h2>
-                    </div>
-                    <div class="card-content">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" id="iconWeather" alt="Weather icon">
-                        <div class="weather-info">
-                            <h3 class="temp" id="temp"></h3>
-                            <ul class="details">
-                                <li id="town"></li>
-                                <li id="myDescription"></li>
-                                <li>High: <span id="myTempMax"></span></li>
-                                <li>Low: <span id="myTempMin"></span></li>
-                                <li>Humidity: <span id="humidity"></span>%</li>
-                                <li>Sunrise: <span id="sunrise"></span></li>
-                                <li>Sunset: <span id="sunset"></span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-home">
-                    <div class="card-header">
-                        <h2>Weather Forecast</h2>
-                    </div>
-                    <div class="card-content">
-                        <div class="weather-info">
-                            <ul class="details forecast">
-                                <li>Today: <span id="today"></span></li>
-                                <li>Wednesday: <span id="tomorrow"></span></li>
-                                <li>Thursday: <span id="afterTomo"></span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Business Section -->
-        <section class="container spotlights">
-        </section>
+        </div>
     </main>
 
     <footer class="end-page">

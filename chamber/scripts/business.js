@@ -1,11 +1,4 @@
 
-// When you reload the page, only the main HTML loads.
-window.addEventListener("load", () => {
-        document.querySelectorAll("header, main, footer").forEach(el => {
-        el.style.visibility = "visible";
-        });
-});
-
 // JSON url
 const url = './data/members.json'
 

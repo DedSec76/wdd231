@@ -147,10 +147,54 @@ h1 {
     padding: 10px 0;
     text-align: center;
 }
+.course:hover {
+    cursor: pointer;
+    background-color: #8c4d3c;
+}
 .completed {
     background-color: rgb(238, 238, 213);
 }
+.completed:hover {
+    background-color: rgb(168, 168, 151);
+}
 
+/************** MODAL ******************/
+@keyframes fadeIn {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+dialog {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / .5);
+    padding: 20px;
+    color: #000;
+
+    animation: fadeIn 2s ease-in-out alternate;
+}
+
+::backdrop {
+    background-color: rgba(0 0 0 / 0.5);
+}
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / .1);
+}
+#course-details h2 {
+    background-color: #3D405B;
+    margin-bottom: 1rem;
+}
 
 /************** FOOTER ******************/
 footer {

@@ -1,4 +1,11 @@
+// When you reload the page, only the main HTML loads.
+window.addEventListener("load", () => {
+        document.querySelectorAll("header, main, footer").forEach(el => {
+        el.style.visibility = "visible";
+        });
+});
 
+// Hamburger Navigation
 const btn_menu = document.querySelector('#btn-menu')
 const nav = document.querySelector('NAV')
 

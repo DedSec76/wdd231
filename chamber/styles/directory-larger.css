@@ -63,4 +63,10 @@
         justify-content: center;
         background-color: black;
     }
+
+    /****************** JOIN PAGE **************/
+    /**************** FORM SECTION *************/
+    .appli-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

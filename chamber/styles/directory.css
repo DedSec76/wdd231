@@ -30,6 +30,10 @@ body {
     color: var(--textColor);
 }
 
+.text-center {
+    text-align: center;
+}
+
 /********************** HEADER *************************/
 
 header {
@@ -80,7 +84,8 @@ header nav a {
     font-size: 1.2rem;
     color: var(--whiteColor);
 }
-header nav a:hover {
+header nav a:hover,
+nav a.active {
     background-color: var(--secondaryColor);
     color: var(--textColor);
 }
@@ -267,13 +272,22 @@ ul.forecast li span {
     border-radius: 8px;
     overflow: hidden;
 }
-.spotlights .card-business.silver {
-    background: linear-gradient(0deg,rgb(215, 215, 215) 57%, rgba(235, 235, 235, 1) 100%);;
+.spotlights .card-business.silver,
+.card-level.silver {
+    background: linear-gradient(0deg,rgb(215, 215, 215) 57%, rgba(235, 235, 235, 1) 100%);
     box-shadow: 3px 2px 12px rgba(192, 192, 192, 1);
 }
-.spotlights .card-business.gold {
-    background: linear-gradient(0deg,rgba(255, 215, 0, 1) 52%, rgba(253, 187, 45, 1) 100%);;
+.spotlights .card-business.gold,
+.card-level.gold {
+    background: linear-gradient(0deg,rgba(255, 215, 0, 1) 52%, rgba(253, 187, 45, 1) 100%);
     box-shadow: 3px 2px 12px rgb(120, 120, 120);
+}
+.card-level.bronze {
+    background: linear-gradient(0deg,rgba(205, 128, 50, 0.721) 41%, rgba(197, 78, 4, 0.782) 90%);
+    box-shadow: 3px 2px 12px rgb(120, 120, 120);
+}
+.card-level.np {
+    background: linear-gradient(0deg,rgb(255, 255, 255) 44%, rgb(226, 226, 226) 100%);
 }
 .silver .level {
     font-size: 1.2rem;
@@ -292,6 +306,7 @@ ul.forecast li span {
 }
 .content-business {
     display: flex;
+    gap: 5px;
 }
 .content-business img {
     aspect-ratio: 4 / 1;
@@ -301,11 +316,11 @@ ul.forecast li span {
     margin: 10px;
     float: left;
 }
-.business-info p, 
-.business-info a {
+.business-info p,
+.business-info a  {
     display: block;
     color: var(--textColor);
-    margin: 10px;
+    margin: 10px 0;
     font-weight: bold;
     text-align: start;
 }
@@ -367,4 +382,139 @@ ul.forecast li span {
 }
 .social a img {
     width: 2rem;
+}
+
+/************* Page Join *************/
+.main-join {
+    max-width: 1100px;
+}
+
+/* Form */
+.appli-form {
+    background-color: var(--grayColor);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    color: var(--textColor);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.appli-form fieldset {
+    border: none;
+}
+.appli-form legend {
+    font-size: 1.2rem;
+    color: var(--primaryDark);
+    margin: 14px 10px;
+    font-weight: bold;
+}
+
+/*  Form fields  */
+.appli-form label,
+.appli-form input:not([type='radio']),
+.appli-form textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 1.2rem;
+}
+
+.appli-form label {
+    color: var(--wineColor);
+}
+.appli-form input,
+.appli-form textarea {
+    padding: .4rem 5px;
+    border: 1px solid var(--grayColor);
+    border-radius: 5px;
+}
+.appli-form input:required {
+    border-left: 6px solid red;
+}
+.appli-form input:required:valid {
+    border-left: 6px solid green;
+}
+
+.appli-form .member-level {
+    color: var(--textColor);
+}
+.appli-form #btn-apply {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.appli-form #btn-apply:hover {
+    cursor: pointer;
+    background-color: var(--secondaryHover);
+}
+
+/* Level Card */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(350px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.card-level {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 1.2rem;
+    border-radius: 6px 2rem;
+
+    animation: fadeIn 2s ease-in-out normal backwards;
+}
+.card-level button {
+    margin-top: 8px;
+    padding: 5px;
+}
+
+/* Modal */
+.modal {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    background-color: var(--whiteColor);
+    border: 1px solid var(--textColor);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / .5);
+    padding: 0 1rem 1rem;
+    color: var(--textColor);
+}
+.modal button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.modal h3 {
+    margin: 1rem 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+.modal p {
+    margin-bottom: 1rem;
+}
+.modal-price {
+    color: var(--wineColor);
+    font-weight: normal;
+}
+.modal-price span {
+    font-weight: bold;
+}
+.modal ul {
+    margin-left: 1.2rem;
+}
+.modal li {
+    margin-bottom: 1rem;
+    color: var(--primaryDark);
+}
+.modal::backdrop {
+    background-color: rgba(0 0 0 / 0.6);
 }

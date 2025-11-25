@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aldair Rutte">
+    <meta name="description" content="This page is dedicated to the chamber of commerce where you can trade unique items of good quality at a good price">
+    <title>Lima Chamber of Commerce</title>
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/directory.css?v=2.0" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/directory-larger.css" media="print" onload="this.media='all'">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
+
+    <!-- FavIcon -->
+    <link rel="icon" href="images/comerce_icon.svg">
+
+    <!-- Meta for Facebook -->
+    <meta property="og:title" content="The Premium Chamber of Commerce">
+    <meta property="og:description" content="Discover the innovative chamber of commerce where you'll find unique items at incredible prices. Explore our new and improved website to find out everything.">
+    <meta property="og:url" content="https://byupw.instructure.com/">
+    <meta property="og:image" content="https://dedsec76.github.io/wdd231/chamber/images/meta-image.webp">
+
+    <!-- Links JS -->
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img loading="lazy" src="images/chamber-commerce-logo.webp" alt="Logo-header" fetchpriority="high" width="50" height="43">
+            <span>Lima Chamber of Commerce</span>
+            <button id="btn-menu"></button>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">JOIN</a>
+        </nav>
+    </header>
+
+    <main class="main-join">
+        <h1 class="text-center">Join Us</h1>
+        <form class="appli-form" action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Membership Application Form</legend>
+
+                <label for="fname">First Name: (*)
+                    <input type="text" required name="fname" id="fname" title="firstname" autocomplete="given-name">
+                </label>
+
+                <label for="lname">Last Name: (*)
+                    <input type="text" required name="lname" id="lname" title="lastname" autocomplete="family-name">
+                </label>
+
+                <label for="organizational">Organizational Title: 
+                    <input type="text" name="organizational" id="organizational" title="Your position or title in the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <label for="email">E-mail: (*)
+                    <input type="email" required name="email" id="email" title="email" autocomplete="email" placeholder="example@gmail.com">
+                </label>
+
+                <label for="mobile">Cell Phone: (*)
+                    <input type="tel" required name="phone" id="mobile" title="phoneNumber" autocomplete="tel">
+                </label>
+
+                <label for="business">Organization's Name (*)
+                    <input type="text" required name="bname" id="business" title="businessName" autocomplete="organization">
+                </label>
+
+                <label for="np">Membership Level</label>
+                    <label for="np" class="member-level"><input  type="radio" name="level" id="np">  NP Membership is for non profit organizations and there is no fee (np)</label>
+                    <label for="bronze" class="member-level"><input type="radio" name="level" id="bronze">  Bronze Membership (bronze)</label>
+                    <label for="silver" class="member-level"><input type="radio" name="level" id="silver">  Silver Membership (silver)</label>
+                    <label for="gold" class="member-level"><input type="radio" name="level" id="gold">  Gold Membership (gold)</label>
+
+                <label for="description">Description: 
+                    <textarea title="businessDescription" name="description" id="description"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+            
+                <button type="submit" id="btn-apply">Apply for Membership!</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Levels</legend>
+                <div class="card-level np">
+                    <h3>Non Profit Membership Level</h3>
+                    <button type="button" class="btn_learn" popovertarget="level-details">Learn More</button>
+                </div>
+                <dialog class="modal" id="level-details" popover="auto">
+                    <h3>Non Profit Membership Level</h3>
+                    <p>For social, educational and community organizations.</p>
+                    <p class="modal-price">Price: <span>Free</span></p>
+                    <p>Benefits: </p>
+                    <ul>
+                        <li>Inclusion in the basic member directory.</li>
+                        <li>Digital certificate of active membership.</li>
+                        <li>Participation in one free annual community event.</li>
+                        <li>Access to newsletters.</li>
+                        <li>Recognition as an allied organization.</li>
+                    </ul>
+
+                    <button type="button" class="closeModal" popovertarget="level-details" popovertargetaction="hide">❌</button>
+                </dialog>
+
+                <div class="card-level bronze">
+                    <h3>Bronze Membership Level</h3>
+                    <button type="button" class="btn_learn" popovertarget="bronze-modal">Learn More</button>
+                </div>
+                <dialog class="modal" id="bronze-modal" popover="auto">
+                    <h3>Bronze Membership Level</h3>
+                    <p>Ideal for small businesses starting out.</p>
+                    <p class="modal-price">Price: <span>$150 per year</span></p>
+                    <p>Benefits: </p>
+                    <ul>
+                        <li>Inclusion in the directory with logo and complete information.</li>
+                        <li>Basic business profile.</li>
+                        <li>5% discount on events and workshops.</li>
+                        <li>Access to quarterly basic training sessions.</li>
+                        <li>Promotion in one monthly social media post.</li>
+                        <li>Digital certificate of company letterhead.</li>
+                    </ul>
+
+                    <button type="button" class="closeModal" popovertarget="bronze-modal" popovertargetaction="hide">❌</button>
+                </dialog>
+
+                <div class="card-level silver">
+                    <h3>Silver Membership Level</h3>
+                    <button type="button" class="btn_learn" popovertarget="silver-modal">Learn More</button>
+                </div>
+                <dialog class="modal" id="silver-modal" popover="auto">
+                    <h3>Silver Membership Level</h3>
+                    <p>For companies seeking greater visibility.</p>
+                    <p class="modal-price">Price: <span>$300 per year</span></p>
+                    <p>Benefits: </p>
+                    <ul>
+                        <li>All the benefits of Bronze.</li>
+                        <li>⭐ Featured company on the homepage.</li>
+                        <li>Optimized company profile.</li>
+                        <li>10% discount on events and trade shows.</li>
+                        <li>Priority registration.</li>
+                        <li>One promotional post per month on social media.</li>
+                        <li>Access to exclusive networking events.</li>
+                    </ul>
+
+                    <button type="button" class="closeModal" popovertarget="silver-modal" popovertargetaction="hide">❌</button>
+                </dialog>
+
+                <div class="card-level gold">
+                    <h3>Gold Membership Level</h3>
+                    <button type="button" class="btn_learn" popovertarget="gold-modal">Learn More</button>
+                </div>
+                <dialog class="modal" id="gold-modal" popover="auto">
+                    <h3>Gold Membership Level</h3>
+                    <p>Maximum visibility and positioning.</p>
+                    <p class="modal-price">Price: <span>$500 per year</span></p>
+                    <p>Benefits: </p>
+                    <ul>
+                        <li>All the benefits of Silver.</li>
+                        <li>⭐⭐ Greater prominence on the homepage.</li>
+                        <li>Rotating banner ad on the homepage.</li>
+                        <li>20% discount on all events.</li>
+                        <li>2 promotional posts per month.</li>
+                        <li>VIP access to business events.</li>
+                        <li>Personalized business marketing consulting.</li>
+                        <li>Free participation in one annual trade show.</li>
+                        <li>Preferred mention in advertising campaigns.</li>
+                    </ul>
+
+                    <button type="button" class="closeModal" popovertarget="gold-modal" popovertargetaction="hide">❌</button>
+                </dialog>
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="end-page">
+        <div class="container-footer">
+            <div class="contact">
+                <h4>Timbuktu Chamber of Commerce</h4>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-23000</p>
+            </div>
+            <div class="social">
+                <a href="#"><img loading="lazy" src="images/youtube.svg" alt="Youtube" fetchpriority="high"></a>
+                <a href="#"><img loading="lazy" src="images/linkedin.svg" alt="Linkedin" fetchpriority="high"></a>
+                <a href="#"><img loading="lazy" src="images/github.svg" alt="GitHub" fetchpriority="high"></a>
+            </div>
+            
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Aldair Rutte Bazán</p>
+                <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
