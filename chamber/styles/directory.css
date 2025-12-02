@@ -388,6 +388,9 @@ ul.forecast li span {
 .main-join {
     max-width: 1100px;
 }
+.main-join h1 {
+    text-shadow: 4px 4px 16px var(--primaryColor);
+}
 
 /* Form */
 .appli-form {
@@ -438,14 +441,14 @@ ul.forecast li span {
 .appli-form .member-level {
     color: var(--textColor);
 }
-.appli-form #btn-apply {
+.btn-apply {
     background-color: var(--primaryColor);
     color: var(--whiteColor);
     padding: 1.5rem 2rem;
     border: none;
     border-radius: 5px;
 }
-.appli-form #btn-apply:hover {
+.btn-apply:hover {
     cursor: pointer;
     background-color: var(--secondaryHover);
 }
@@ -517,4 +520,60 @@ ul.forecast li span {
 }
 .modal::backdrop {
     background-color: rgba(0 0 0 / 0.6);
+}
+
+/* Discover Page */
+.discover-container {
+    margin: 10px;
+}
+.thecard {
+    margin: 1rem 8px;
+    background-color: var(--backgroundCards);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(103, 103, 103);
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "cost"
+    "description"
+    "location"
+    "button";
+}
+.thecard h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+.thecard img {
+    width: 100%;
+    grid-area: photograph;
+}
+.thecard #cost {
+    grid-area: cost;
+    color: var(--primaryDark);
+    font-weight: bold;
+}
+
+.thecard address {
+    margin: .5rem 10px;
+    grid-area: location;
+}
+.thecard p {
+    margin: .5rem 10px;
+    grid-area: description;
+}
+.thecard button {
+    grid-area: button;
+    margin-left: 10px;
+}
+
+#visits {
+    margin: 1.2rem 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--whiteColor);
+    text-shadow: 4px 4px 16px var(--wineColor);
 }

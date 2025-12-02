@@ -1,4 +1,4 @@
-@media only screen and (min-width: 321px) {
+@media only screen and (min-width: 64rem) {
     header {
         display: flex;
         flex-direction: row;
@@ -68,5 +68,17 @@
     /**************** FORM SECTION *************/
     .appli-form {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /***************** DISCOVER PAGE ********************/
+    .discover-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .discover-container h1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-shadow: 4px 4px 16px var(--primaryColor);
     }
 }

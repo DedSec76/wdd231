@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Aldair Rutte">
-    <meta name="description" content="In this section we provide you with the complete directory offered by the chamber of commerce">
-    <title>The Chamber of Commerce Directory</title>
+    <meta name="description" content="This page is dedicated to helping you discover unique places where you can enjoy a unique and unparalleled stay. Explore now.">
+    <title>Lima Chamber of Commerce</title>
 
     <!-- Links CSS -->
     <link rel="stylesheet" href="styles/normalize.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/directory.css?v=2.0" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/directory-medium.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles/directory-larger.css" media="print" onload="this.media='all'">
-
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,40 +30,34 @@
 
     <!-- Links JS -->
     <script src="scripts/directory.js" defer></script>
-    <script src="scripts/business.js?v=2.0" defer></script>
-    <script src="scripts/layout-view.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 <body>
     <header>
         <div class="logo-box">
             <img loading="lazy" src="images/chamber-commerce-logo.webp" alt="Logo-header" fetchpriority="high" width="50" height="43">
             <span>Lima Chamber of Commerce</span>
-            <button id="btn-menu"></button>
+            <button id="btn-menu" 
+            aria-label="Open Hamburger Button"
+            aria-expanded="false"
+            aria-controls="menu-mobile"></button>
         </div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html" class="active">Directory</a>
-            <a href="join.html">Join</a>
+            <a href="discover.html" class="active">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">JOIN</a>
         </nav>
     </header>
-    
-    <main>
-        <div class="title-directory">
-            <h1>Directory of the Lima Chamber of Commerce</h1>
-        </div>
-        <!-- Button Section-->
-         <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-         </div>
 
-        <!-- Second Section -->
-        <section class="container directory">
-        </section>
+    <main>
+        <article class="discover-container">
+            <h1 class="text-center">Incredible places to discover</h1>
+        </article>
     </main>
-    
+
     <footer class="end-page">
+        <h3 id="visits" class="text-center"></h3>
         <div class="container-footer">
             <div class="contact">
                 <h4>Timbuktu Chamber of Commerce</h4>

@@ -1,0 +1,19 @@
+@media only screen and (min-width: 38rem) {
+    .thecard {
+        grid-template-areas: 
+        "photograph name"
+        "photograph cost"
+        "photograph description"
+        "photograph location"
+        "photograph button";
+    }
+    .thecard img {
+        width: 300px;
+
+        filter: saturate(90%);
+    }
+
+    .thecard img:hover {
+        box-shadow: 0 0 50px #555555;
+    }
+}
