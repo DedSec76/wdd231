@@ -1,0 +1,22 @@
+:root {
+    --base-color: #FFF6ED;             /* Main background of the website.*/
+    --primary-color: #8C3A2B;          /* Main Buttons, Important Headings and Logo.*/
+    --secondary-color:: #D97B54;         /* Subtitles, Dessert cards, Eye-catching elements without being too bold.*/
+    --accent-color: #F2A65A;           /* Button hover, "New / Popular" tags, Small details that stand out.*/
+    --dark-text: #3B1F1A;              /* Main text, Long paragraphs, Descriptions.*/
+    --white-color: #FFFFFF;            /* Card backgrounds, Contrast in sections, Clean spaces*/
+
+    --heading-font: "Pacifico", cursive; /* Headings h1,h2,h3,h4 ...*/
+    --text-font: "Poppins", sans-serif;  /* Main text a, p, span*/
+}
+
+body {
+    background-color: var(--base-color);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--heading-font);
+}
+p, span, a, li {
+    font-family: var(--text-font);
+}
