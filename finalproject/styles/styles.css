@@ -10,7 +10,10 @@
     --text-font: "Poppins", sans-serif;  /* Main text a, p, span*/
 }
 
-/************** EMPIEZA CSS  **************/
+/************** Templates  **************/
+.text-center {
+    text-align: center;
+}
 h1, h2, h3, h4,
 .header-logo span {
     font-family: var(--heading-font);
@@ -161,7 +164,8 @@ p, li, a, button, span {
     transition: 0.2s;
 }
 
-.mobile-menu ul li a:hover {
+.mobile-menu ul li a:hover,
+.mobile-menu ul li a.focus {
     color: var(--primary-color);
 }
 
@@ -733,3 +737,147 @@ p, li, a, button, span {
     color: #826c68;
     font-size: 0.75rem;
 }
+
+/* Desserts Page*/
+.title-desserts {
+    color: var(--primary-color);
+}
+
+/* Featured Section */
+.pricipal {
+    padding: 0 4rem;
+}
+.grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.limit-3 .ponche:nth-child(n+4) {
+    display: none;
+}
+
+
+@media (min-width: 740px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.ponche {
+    border: 1px solid var(--primary-color);
+    padding-bottom: 2rem;
+    text-align: center;
+    box-shadow: 5px 8px 16px #ccc;
+    transition: transform 0.3s ease; /*, box-shadow 0.3s ease;*/
+}
+
+.ponche:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // box-shadow already installed*/
+}
+
+.ponche img {
+    width: 40%;
+    max-height: 20rem;
+}
+
+
+@media (min-width: 740px) {
+    .ponche img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.ponche p {
+    width: 80px;
+    margin: 0 auto;
+    padding: 18px 15px;
+    background-color: white;
+    border-radius: 100px;
+    color: black;
+}
+.ponche h3 {
+    margin: 0.6rem 0;
+}
+
+button {
+    background: #342f28;
+    padding: 1rem 2rem;
+    border: 1px solid #342f28;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+button:hover {
+    background: var(--accent-color);
+    cursor: pointer;
+    border: 1px solid var(--neutro-white-color);
+    color: var(--neutro-white-color);
+}
+
+.grid a {
+    margin: 0 auto;
+}
+
+/* Contact Page */
+.form-card {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: var(--white-color);
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border: 2px solid var(--accent-color);
+  }
+
+  label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  input, select, textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 110px;
+  }
+
+  .button-form {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background: var(--secondary-color);
+  }
+
+  .note {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--dark-text);
+  }
+
+  .btn_contact {
+    margin: 2rem 0;
+    text-align: center;
+  }

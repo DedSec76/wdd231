@@ -37,4 +37,9 @@
         flex-wrap: wrap;
         gap: 1.5rem;
     }
+    .principal {
+        max-width: 1300px;
+        padding: 0 2rem;
+        margin: auto;
+    }
 }

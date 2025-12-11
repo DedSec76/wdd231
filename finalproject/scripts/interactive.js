@@ -13,6 +13,14 @@ menuBtn.addEventListener("click", toggleMenu);
 overlay.addEventListener("click", toggleMenu);
 
 const year = document.getElementById("year");
+year.textContent = new Date().getFullYear();
 
-const last = document.getElementById("lastModified");
-last.textContent = document.lastModified || new Date().toLocaleDateString();
+const lastMod = document.querySelector("#lastModified");
+
+if (lastMod){
+    lastMod.textContent = document.lastModified || new Date().toLocaleDateString();
+}
+
+
+
+
