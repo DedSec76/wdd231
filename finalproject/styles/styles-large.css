@@ -1,0 +1,9 @@
+@media only screen and (min-width: 1024px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

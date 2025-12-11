@@ -1,0 +1,40 @@
+@media only screen and (min-width: 608px) {
+    .mobile-menu {
+        position: relative;
+        top: 16px;
+        right: 30px;
+        width: auto;
+        z-index: 0;
+        box-shadow: none;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .hero {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 4rem 8%;
+    }
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .mobile-menu-button {
+        display: none;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .whyus-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}
